@@ -693,6 +693,14 @@ class BNO055(object):
         """Return the current temperature in Celsius."""
         return self._read_signed_byte(BNO055_TEMP_ADDR)
 
+    ###############################################
+    #EXTRA FUNCTIONS:
+
+    #LICENSE: https://github.com/SV-Seeker/pi-rov/blob/master/LICENSE
+    #original source: https://github.com/SV-Seeker/pi-rov/blob/cf7ac835db844607e000f37f673b41662d8e3086/rov/hardware/imu.py
+    # thank you a lot, Patrick Forringer ( https://github.com/destos )
+
+
     def load_calibration(self, filename):
         """Read the internal calibration paramters from a json file.
         :param filename: path to the calibration file
