@@ -741,3 +741,6 @@ class BNO055(object):
         }
         with open(filename, 'w') as f:
             json.dump(json_data, f, indent=4, sort_keys=True)
+
+# END OF EXTRA FUNCTIONS FROM THIS SOURCE
+#######################################################################
